@@ -1,0 +1,48 @@
+.outer-box {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .rowData {
+    display: flex;
+  }
+  
+  input {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  input[readonly] {
+    background-color: #f0f0f0;
+    color: #000;
+    border: 2px solid #ccc;
+  }
+  
+  input:not([readonly]):focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  
+  input.correct {
+    background-color: green;
+    color: white;
+  }
+  
+  input.incorrect {
+    background-color: red;
+    color: white;
+  }
+  
+  input.empty {
+    background-color: white;
+    color: black;
+  }
+  
